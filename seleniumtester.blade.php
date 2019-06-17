@@ -10,7 +10,7 @@ use Facebook\WebDriver\WebDriverWait;
 use Facebook\WebDriver\WebDriverExpectedCondition;
  use Facebook\WebDriver\Remote\WebDriverCapabilityType;
 
- foreach ($users as $user) {
+ 
             $emailaddress=$user['name'];
             $pass=$user['password'];
             $proxy=$user['proxy'];
@@ -124,7 +124,7 @@ use Facebook\WebDriver\WebDriverExpectedCondition;
          
              $driver->quit();
              
-        }
+       
         header("Location: /home");
 die();
        // header('Location: '.$_SERVER['REQUEST_URI']);
